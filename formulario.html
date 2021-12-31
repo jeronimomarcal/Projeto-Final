@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    
+    <title>Formato de compra </title>
+    <link rel="stylesheet" href="assets/css/formulario.css">
+  </head>
+  <body>
+    <form action="" class="formulario">
+      <a href="index.html"><img src="images/pic01.jpg" class="imgLogo" /></a>
+
+      <h1 class="formulario__titulo">MarçalTech</h1>
+      <h3 class="formulario__subtitulo">Registro de compra</h3>
+      <p class="formulario__parrafo">
+        Preencha o formulário para cadastrar o pedido.
+      </p>
+      <label for="cliente" class="formulario__label">Escreva o nome da pessoa que recebe-ra o pedido</label>
+      <input
+        id="cliente"
+        type="text"
+        class="formulario__input"
+        placeholder="Escreva o nome completo"
+      />
+      <label for="fecha" class="formulario__label"
+        >Escolha a melhor data de entrega</label
+      >
+      <input
+        id="fecha"
+        type="date"
+        class="formulario__input"
+        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+      />
+      <label for="hora" class="formulario__label"
+        >Escolha a melhor hora para a entrega</label
+      >
+      <input id="hora" type="time" class="formulario__input" />
+
+      <label for="portatil" class="formulario__label"
+        >Diga qual quadro você quer:</label
+      >
+      <select id="portatil" name="listaempleados" class="formulario__input">
+          <optioN> </optioN>
+        <option>Ipsum</option>
+        <option>Sed</option>
+        <option>Consequat</option>
+        <option>Blandit</option>
+        <option>Etiam</option>
+        <option>Dolore</option>
+        <option>Magna tempus</option>
+        <option>Veroeros</option>
+
+      </select>
+
+      <!--Cantidad e arrendamiento-->
+      <label for="cantidad" class="formulario__label">Quantos quadros voce deseja?</label>
+      <input
+        id="cliente2"
+        type="text"
+        class="formulario__input"
+        placeholder="Quantidade"
+      />
+
+     <label for="cantidad" class="formulario__label">Coloque seu endereço completo</label>
+     <input
+       id="cliente2"
+       type="text"
+       class="formulario__input"
+       placeholder="Endereço"
+     />
+      <label for="pago" class="formulario__label"
+        >Forma de pagamento</label
+      >
+      <select id="pago" name="listaservicios" class="formulario__input">
+        <option></option>
+        <option>Cartão de credito(12 meses sin intereses)</option>
+        <option>Pix</option>
+        <option>Boleto</option>
+      </select>
+  
+
+      <div id="respuesta"></div>
+      
+      <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
+      <br><br>
+      <a href="index.html"><-----Voltar para o Catalogo</a>
+    </form>
+    <script src="js/compras.js"></script>
+    <script src="js/jquery.js"></script>
+  </body>
+</html>
